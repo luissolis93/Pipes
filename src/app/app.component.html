@@ -1,0 +1,128 @@
+<div class="container">
+    <br>
+    <h1>Pipes</h1>
+    <br>
+
+    <table class="table text-center">
+        <thead class="thead-inverse">
+            <tr>
+                <th>Variable</th>
+                <th>Pipe</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>{{Nombre}}</th>
+                <th>uppercase</th>
+                <th>{{Nombre | uppercase}} </th>
+            </tr>
+            <tr>
+                <th>{{Nombre}}</th>
+                <th>lowercase</th>
+                <th>{{Nombre | lowercase}} </th>
+            </tr>
+            <tr>
+                <th>{{Nombre}}</th>
+                <th>slice</th>
+                <th>{{Nombre | slice:3}} </th>
+            </tr>
+            <tr>
+                <th>{{Nombre}}</th>
+                <th>slice:0:3</th>
+                <th>{{Nombre | slice:0 : 3}} </th>
+            </tr>
+            <tr>
+                <th>{{arreglo}}</th>
+                <th>slice:0:3</th>
+                <th>{{arreglo | slice:0 : 3}} </th>
+            </tr>
+            <tr>
+                <th>{{pi}}</th>
+                <th>number</th>
+                <th>{{pi | number}} </th>
+            </tr>
+            <tr>
+                <th>{{pi}}</th>
+                <th>number</th>
+                <th>{{pi | number : '3.'}} </th>
+            </tr>
+            <tr>
+                <th>{{pi}}</th>
+                <th>number</th>
+                <th>{{pi | number : '3.0-6'}} </th>
+            </tr>
+            <tr>
+                <th>{{ porcentaje}}</th>
+                <th>percent</th>
+                <th>{{porcentaje | percent}} </th>
+            </tr>
+            <tr>
+                <th>{{ porcentaje}}</th>
+                <th>percent</th>
+                <th>{{porcentaje | percent:'2.2'}} </th>
+            </tr>
+            <tr>
+                <th>{{ salario }}</th>
+                <th>currency</th>
+                <th>{{ salario|currency}} </th>
+            </tr>
+            <tr>
+                <th>{{ salario }}</th>
+                <th>currency</th>
+                <th>{{ salario|currency: 'EUR'}} </th>
+            </tr>
+            <tr>
+                <th>{{ salario }}</th>
+                <th>currency</th>
+                <th>{{ salario|currency: 'JPY'}} </th>
+            </tr>
+            <tr>
+                <th>{{fecha}}</th>
+                <th>date</th>
+                <th>{{ fecha | date}} </th>
+            </tr>
+            <tr>
+                <th>{{fecha}}</th>
+                <th>date</th>
+                <th>{{ fecha | date:'medium'}} </th>
+            </tr>
+            <tr>
+                <th>{{fecha}}</th>
+                <th>date</th>
+                <th>{{ fecha | date:'longDate'}} </th>
+            </tr>
+            <tr>
+                <th>{{fecha}}</th>
+                <th>date</th>
+                <th>{{ fecha | date:'shortDate'}} </th>
+            </tr>
+            <tr>
+                <th>{{fecha}}</th>
+                <th>date</th>
+                <th>{{ fecha | date:'dd-MMM-yyyy'}} </th>
+            </tr>
+            <tr>
+                <th>{{persona }}</th>
+                <th>json</th>
+                <th>{{ persona| json}} </th>
+            </tr>
+            <!-- pipes personalizados -->
+            <tr>
+                <th>{{ nombre2}}</th>
+                <th>capitalizado</th>
+                <th>{{ nombre2 |capitalizado}} </th>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+<!-- 
+<tr>
+    <th>{{ }}</th>
+    <th></th>
+    <th>{{ |'}} </th>
+</tr>
+ -->
