@@ -113,8 +113,23 @@
                 <th>capitalizado</th>
                 <th>{{ nombre2 |capitalizado}} </th>
             </tr>
+
+            <tr>
+                <th>{{ Nombre }}</th>
+                <th>contraseña:{{Activar}}
+                    <br>
+                    <button (click)="Activar=!Activar" class="btn btn-outline-primary" type="button">Activar/Desactivar</button>
+                </th>
+                <th>{{ Nombre | contrasenas:Activar }} </th>
+            </tr>
+
+
         </tbody>
     </table>
+
+    <h4>Youtube <small>videos</small></h4>
+    <hr>
+    <iframe width="560" height="315" allowfullscreen [src]="video | domSanitizer:'https://www.youtube.com/embed/'" src="" frameborder="0"></iframe>
 
 
 </div>

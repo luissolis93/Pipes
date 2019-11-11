@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
+import { ContrasenasPipe } from './pipes/contrasenas.pipe';
+import { DomSanitizerPipe } from './pipes/dom-sanitizer.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CapitalizadoPipe
+    CapitalizadoPipe,
+    ContrasenasPipe,
+    DomSanitizerPipe
   ],
   imports: [
     BrowserModule

@@ -13,12 +13,15 @@ export class AppComponent {
   public salario = 1234.5;
   public fecha = new Date();
   public persona={
-    nombre:'IJ',
+    nombre:'LG',
     edad:56,
     direccion:{
       calle:'mi callle',
       casa:'457'
     }
   }
-  public nombre2:string='IsAbEl JiMenEz'
+  public nombre2:string='LuIS GaRcIA'
+  public Activar:boolean=false;
+  public video:string="m7Bc3pLyij0";
+  //https://youtu.be/m7Bc3pLyij0
 }
